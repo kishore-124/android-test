@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_42sdp"
+        android:background="@android:color/black">
+
+        <TextView
+            android:id="@+id/tv_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Logout"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_editProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="@dimen/_8sdp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Edit Profile"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_20ssp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/todayMaterialCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        app:cardBackgroundColor="@color/material_blue"
+        app:cardCornerRadius="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/temp_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="13°"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_50sdp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/weather_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="cloud"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_18ssp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_humidity"
+                style="@style/TextViewInColoredCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:gravity="center"
+                android:text="@string/humidity_label"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_wind"
+                style="@style/TextViewInColoredCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:gravity="center"
+                android:text="@string/wind_label"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_country"
+                style="@style/TextViewInColoredCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:gravity="center"
+                android:text="Country"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_name"
+                style="@style/TextViewInColoredCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:gravity="center"
+                android:text="Area Name"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_margin="@dimen/_8sdp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_140sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:src="@drawable/car_1" />
+
+            <ImageView
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_140sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:src="@drawable/car_2" />
+
+            <ImageView
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_140sdp"
+                android:src="@drawable/car_3" />
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+</LinearLayout>

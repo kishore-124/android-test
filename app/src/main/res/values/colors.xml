@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#06010C</color>
+    <color name="colorPrimaryDark">#010004</color>
+    <color name="colorAccent">#000000</color>
+    <color name="bgColor">#F8F7F7</color>
+    <color name="secondaryTextColor">#4E4D4D</color>
+    <color name="primaryTextColor">#000000</color>
+    <color name="selectedColor">#F8F8F8</color>
+    <color name="chat_color">#3D3D3D</color>
+    <color name="chat_nav">#E3E3E3</color>
+    <color name="color_shimmer">#dddddd</color>
+    <color name="color_green_comp">#196F3D</color>
+    <color name="color_red">#B22222</color>
+    <color name="color_green">#1B5E20</color>
+    <color name="blue_color">#475FF6</color>
+    <color name="chart_line_color">#009efb</color>
+    <color name="background">#eceefa</color>
+    <color name="material_blue">#6452f0</color>
+    <color name="grey_10">#e6e6e6</color>
+    <color name="green_success">#155724</color>
+    <color name="colorPrimaryNight">#263238</color>
+    <color name="colorPrimaryDarkNight">#141d26</color>
+    <color name="scrim">#99323232</color>
+</resources>
